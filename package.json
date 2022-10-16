@@ -2,9 +2,65 @@
   "name": "noTidalAPI",
   "version": "0.0.1",
   "description": "Unofficial API for Tidal",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/jyrki-dev/noTidalAPI",
   "author": "jyjokokk <j.j.kokkola@gmail.com> (https://github.com/jyjokokk)",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "express": "^4.18.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "start:dev": "nodemon ./src/index.ts",
+    "dev": "nodemon ./src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc",
+    "publish:patch": "yarn prebuild && yarn version --patch && git add . && git commit -m \"Patch version $(yarn -v) release\" && git push",
+    "publish:minor": "yarn prebuild && yarn version --minor && git add . && git commit -m \"Minor update $(yarn -v) release\" && git push",
+    "publish:major": "yarn prebuild && yarn version --major && git add . && git commit -m \"Version $(yarn -v) release\" && git push",
+    "ts-node": "ts-node",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jest": "^29.1.2",
+    "@types/node": "^18.11.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.2.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.(spec|test)\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
 }

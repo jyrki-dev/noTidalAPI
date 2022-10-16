@@ -19,13 +19,13 @@ Install the package either using either npm or yarn.
 **npm:**
 
 ```sh
-npm install my-crazy-module --save
+npm install notidalapi --save
 ```
 
 **yarn:**
 
 ```sh
-yarn add my-crazy-module --save
+yarn add notidalapi --save
 ```
 
 ## Usage example
@@ -89,15 +89,15 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/jyrki-dev/noTidalAPI.svg?style=for-the-badge
 [contributors-url]: https://github.com/jyrki-dev/noTidalAPI/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/jyrki-dev/noTidalAPI.svg?style=for-the-badge
 [forks-url]: https://github.com/jyrki-dev/noTidalAPI/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/jyrki-dev/noTidalAPI.svg?style=for-the-badge
 [stars-url]: https://github.com/jyrki-dev/noTidalAPI/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/jyrki-dev/noTidalAPI.svg?style=for-the-badge
 [issues-url]: https://github.com/jyrki-dev/noTidalAPI/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/jyrki-dev/noTidalAPI.svg?style=for-the-badge
 [license-url]: https://github.com/jyrki-dev/noTidalAPI/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jyrki-kokkola-1773ba178/
