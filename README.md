@@ -1,4 +1,5 @@
-# Product Name
+# noTidalAPI
+
 > Connect to the Tidal music service through NodeJS
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -10,7 +11,7 @@
 
 Unofficial NodeJS API for TIDAL music streaming service. Based on the Python [python-tidal][pytidal] API by tamland.
 
-![](header.png)
+![Header](header.png)
 
 ## Installation
 
@@ -68,15 +69,13 @@ yarn install
 ## Release History
 
 * 0.0.1
-  - Initial version
+  - Spec & Design
 
-## Meta
+## Contact
 
 Jyrki Kokkola – [@jyjokokk](https://twitter.com/jyjokokk/) – j.j.kokkola@gmail.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 ## Contributing
 
