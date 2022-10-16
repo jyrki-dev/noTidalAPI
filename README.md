@@ -1,5 +1,5 @@
 # Product Name
-> Short blurb about what your product does.
+> Connect to the Tidal music service through NodeJS
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
