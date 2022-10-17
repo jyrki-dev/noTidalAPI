@@ -24,13 +24,14 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "prebuild": "rm -rf ./dist",
     "build": "tsc",
-    "publish:patch": "yarn prebuild && yarn version --patch && git add . && git commit -m \"Patch version $(yarn -v) release\" && git push",
-    "publish:minor": "yarn prebuild && yarn version --minor && git add . && git commit -m \"Minor update $(yarn -v) release\" && git push",
-    "publish:major": "yarn prebuild && yarn version --major && git add . && git commit -m \"Version $(yarn -v) release\" && git push",
+    "publish:patch": "yarn prebuild && yarn version --patch && git add . && git commit -m \"Patch version $(yarn -v) release\" && git push && git push --tags",
+    "publish:minor": "yarn prebuild && yarn version --minor && git add . && git commit -m \"Minor update $(yarn -v) release\" && git push && git push --tags",
+    "publish:major": "yarn prebuild && yarn version --major && git add . && git commit -m \"Version $(yarn -v) release\" && git push && git push --tags",
     "ts-node": "ts-node",
     "tsc": "tsc"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.14",
     "@types/jest": "^29.1.2",
     "@types/node": "^18.11.0",
