@@ -1,2 +1,1 @@
-console.log('hello');
-console.log('saatana');
+console.log('Placeholder');

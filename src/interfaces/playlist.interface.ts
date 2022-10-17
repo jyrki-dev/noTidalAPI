@@ -7,7 +7,7 @@ export interface Playlist {
   description?: string;
   createdBy?: User;
   tracks: Track[];
-  songCount: number;
+  trackCount: number;
   totalLength: number;
   created?: Date;
 }
