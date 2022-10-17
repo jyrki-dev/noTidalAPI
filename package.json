@@ -1,8 +1,8 @@
 {
-  "name": "noTidalAPI",
+  "name": "notidalapi",
   "version": "0.0.1",
   "description": "Unofficial API for Tidal",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/jyrki-dev/noTidalAPI",
   "author": "jyjokokk <j.j.kokkola@gmail.com> (https://github.com/jyjokokk)",
   "license": "MIT",

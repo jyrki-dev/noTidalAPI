@@ -16,6 +16,7 @@
     "strictNullChecks": false,    /* When type checking,    take into account 'null' and 'undefined'. */
     "strictBindCallApply": true,    /* Check that the arguments for 'bind',    'call',    and 'apply' methods match the original function. */
     "noFallthroughCasesInSwitch": true,    /* Enable error reporting for fallthrough cases in switch statements. */
-    "skipLibCheck": true    /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,    /* Skip type checking all .d.ts files. */
+    "rootDir": "./src"
   }
 }
