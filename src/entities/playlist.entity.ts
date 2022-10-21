@@ -1,7 +1,7 @@
-import { User } from './user.interface';
-import { Track } from './track.interface';
+import { Track } from './track.entity';
+import { User } from './user.entity';
 
-export interface Playlist {
+export class Playlist {
   id: string;
   name: string;
   description?: string;

@@ -6,10 +6,10 @@ export class Logger {
   }
 
   debug(message: string, printable?: any): void {
-    console.log(`DEBUG: ${message} ${'\n\t' + JSON.stringify(printable)}`);
+    console.debug(`DEBUG: ${message} ${'\n\t' + JSON.stringify(printable)}`);
   }
 
-  error(message: string, printable?: any): void {
-    console.error(`ERROR: ${message} ${'\n\t' + JSON.stringify(printable)}`);
+  error(message: string, error?: Error): void {
+    console.error(`%cERROR: ${message}\n${error}`);
   }
 }

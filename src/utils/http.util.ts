@@ -8,7 +8,6 @@ export default class http {
     const response = await axios.post(url, payload);
     if (response.status >= 400) {
       this.logger.error(`received error code ${response.status}`);
-      Promise.reject(response.statusText);
     }
     return response;
   }
